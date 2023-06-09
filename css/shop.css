@@ -1,0 +1,303 @@
+* {
+	behavior: url('csshover3.htc');
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+.QAQ {
+	display: block;
+	width: 80%;
+}
+
+.productphotos {
+	width: 600px;
+	height: 350px;
+	border-radius: 10%;
+	border: 10px white solid;
+	margin: 0 0 0 40px;
+
+}
+
+.product {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 25px 0 0 0px;
+	flex-wrap: wrap;
+}
+
+.greet {
+	margin: 15px 20px 15px 20px;
+	padding: 10px 0 0 30px;
+
+}
+
+.greet h1 {
+	color: white;
+}
+
+title {
+	padding: 0;
+	margin: o;
+	width: 100%;
+}
+
+.title h1 {
+	color: white;
+	margin: 15px 0;
+}
+
+.title hr {
+	color: white;
+	width: 100%;
+}
+
+#greeting {
+	margin: 0px 0 0 0;
+	height: 30px;
+}
+
+#greeting h2 {
+	margin: 10px 0;
+	color: white;
+}
+
+#greeting h3 {
+	font-size: 18px;
+}
+
+* html #greeting ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: auto;
+}
+
+#greeting ul li {
+	float: left;
+}
+
+* html #greeting ul li {
+	display: inline;
+}
+
+#greeting ul li {
+	/* 將a改為區塊元件，以便指定寬高 */
+	display: block;
+	/* 這邊也要設float，否則IE6會以100%寬度顯示 */
+	float: left;
+	/* 固定高度 */
+	height: 30px;
+	width: 118px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+}
+
+#greeting ul li ul {
+	/* 讓第二層ul跳脫文件流以利定位 */
+	position: absolute;
+	/* 固定寬度 */
+	width: 118px;
+	/* 避免出現捲軸 */
+	overflow: visible;
+	/* 讓ul與母階層li相同位置 */
+	clear: left;
+	margin-top: -31px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+/* 修正IE7絕對定位差異 */
+*:first-child+html #greeting ul li ul {
+	margin-top: 0;
+}
+
+/* 修正IE6絕對定位差異 */
+* html #greeting ul li ul {
+	margin-top: 0;
+}
+
+#greeting ul li ul li {
+	/* 覆寫繼承自第一層的浮動設定 */
+	float: none;
+	text-align: center;
+}
+
+#greeting ul li ul li {
+	/* 覆寫繼承自第一層的浮動設定 */
+	float: none;
+	width: 100%;
+	/* 註：display、height、padding繼承第一層的設定 */
+}
+
+#greeting ul li ul li ul {
+	margin-top: -31px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 100px;
+	width: 100%;
+}
+
+*:first-child+html #greeting ul li ul li ul {
+	margin-top: -30px;
+}
+
+#greeting ul li ul {
+
+	visibility: hidden;
+}
+
+#greeting ul li:hover ul {
+
+	visibility: visible;
+}
+
+#greeting ul li:hover ul li ul {
+
+	visibility: hidden;
+}
+
+#greeting ul li ul li:hover ul {
+
+	visibility: visible;
+}
+
+#greeting ul li ul li:hover ul li ul {
+
+	visibility: hidden;
+}
+
+#greeting ul li {
+	color: black;
+	background: #efefef;
+	text-decoration: none;
+	line-height: 30px;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+#greeting ul li:hover {
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+
+#greeting ul li:focus {
+	visibility: hidden;
+}
+
+#greeting ul li ul {
+	background: #efefef;
+}
+
+.greet textarea {
+	resize: none;
+	border-radius: 0 20px 20px 20px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.QAQ form .minusadd {
+	display: flex;
+	justify-content: center;
+	background-color: aliceblue;
+	width: 80px;
+	height: 25px;
+	border-radius: 10px;
+}
+
+.QAQ form input {
+	margin: 0;
+	border: none;
+	text-align: center;
+	height: 25px;
+	width: 100px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.QAQ form .input_num {
+	width: 30px;
+	border-radius: 10px;
+}
+
+.QAQ form .btn {
+	width: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.QAQ form h2 {
+	color: white;
+	margin: 0;
+	margin: 10px 0;
+}
+
+.productinformation {
+	margin: 60px 0 0 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.detail {
+	margin-right: 20%;
+}
+.star{
+	margin-left:20px ;
+	color: rgb(243,213,114);
+}
+.detail section {
+	color: white;
+	font-size: 16px;
+	line-height: 30px;
+	text-indent: 2em;
+	width: 400px;
+}
+
+.amount {
+	margin: 5px 0px 0 0px;
+
+}
+
+.amount h4 {
+	color: white;
+	width: 100px;
+	margin: 10px 0 10px 5px;
+	font-weight: 500;
+}
+
+.amount h2 {
+	margin: 10px 0 10px 0;
+	font-weight: 500;
+}
+
+.content {
+	margin: 30px;
+	width: 60%;
+}
+
+.flexcenter {
+	display: flex;
+	padding: 0;
+}
+
+.contenting {
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.personcontent section {
+	font-size: 16px;
+	text-indent: 2em;
+	border-radius: 20px;
+	line-height: 30px;
+}

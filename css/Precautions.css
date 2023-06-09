@@ -1,0 +1,58 @@
+main {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+
+}
+
+body {
+    margin: 0px;
+    background-size: cover;
+}
+
+main * {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: left;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+main div {
+    text-align: left;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+main hr {
+    text-align: center;
+}
+
+.txt {
+    line-height: 30px;
+}
+
+main section {
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}

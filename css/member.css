@@ -1,0 +1,312 @@
+body {
+    font-family: "Open Sans";
+    background-image: url(../image/4.jpg);
+    background-size: cover;
+    color: #ecf0f1;
+
+}
+
+main {
+    line-height: 1.618em;
+}
+
+.member {
+    position: relative;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.member::before,
+.member::after {
+    content: "";
+    display: table;
+}
+
+main input {
+    margin: 20px;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.tab {
+    float: left;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    border-radius: 25% 25% 0 0;
+    background-image: url(../image/1.png);
+    border-right: 0.125rem solid #16a085;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+    z-index: 1;
+}
+
+.tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+}
+
+.tab-content {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    background: #fff;
+    color: #2c3e50;
+    border-radius: 0 15px 0 15px;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+.tab-switch:checked+.tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+}
+
+.tab-switch:checked+label+.tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+main form {
+    margin: 20px;
+}
+
+form a {
+    text-decoration: none;
+    color: black;
+}
+
+main button {
+    margin: 20px;
+    border-radius: 20px;
+    width: 50px;
+    font-weight: 500;
+    height: 25px;
+    font-size: 15px;
+}
+
+.show {
+    margin: 40px 0 0 0;
+}
+
+.show p {
+    font-size: 18px;
+    margin: 20px 0 20px 40%;
+    text-align: left;
+
+}
+
+#edit {
+    width: 70%;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 20px;
+    border: 1px solid #16a085;
+    border-radius: 0 25px 0 25px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=88);
+}
+
+.show {
+    margin: 40px 0 0 0;
+}
+
+.show p {
+    font-size: 18px;
+    margin: 20px 0 20px 40%;
+    text-align: left;
+
+}
+
+#edit {
+    width: 70%;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 20px;
+    border: 1px solid #16a085;
+    border-radius: 0 25px 0 25px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=88);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid #16a085;
+    border-radius: 0 25px 0 25px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.comment {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #16a085;
+    border-radius: 0 25px 0 25px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.b-title {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+table {
+    width: 100%;
+    border-spacing: 20px;
+    table-layout: fixed;
+}
+
+
+
+/*合計*/
+.total {
+    text-align: right;
+    margin: 5px;
+}
+
+/*祝福語*/
+.blessing {
+    width: 30%;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    width: 50px;
+    font-weight: 500;
+}
+
+.comment_textarea {
+    resize: none;
+}
+
+.comment_click {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #71B4EB;
+}
+
+.comment_click:hover {
+    background-color: rgb(106, 0, 255);
+}
+
+/*星等*/
+.rating {
+    transform: rotateY(180deg);
+    display: flex;
+    width: 35%;
+    margin: 0 0 10px 30px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.rating input:checked+label {
+    background-color: transparent;
+}
+
+.rating label:before {
+    content: '★';
+    display: block;
+    font-size: 25px;
+    color: #ebebeb;
+}
+
+.rating label:after {
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: rgb(243, 213, 114);
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0;
+}
+
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}

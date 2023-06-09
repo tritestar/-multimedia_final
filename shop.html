@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品</title>
+    <script src="https://kit.fontawesome.com/f665ad8d64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="import" href="component.html" />
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><!--首頁超連結-->
+                    <div class="home"><img src="image/logo.jpg" /></div>
+                </a>
+                <span class="tit">我想對你說</span>
+            </div>
+            <div class="functions">
+                <div class="search">
+                    <form action="search.html" method="get">
+                        <!--搜尋功能-->
+                        <input type="search" placeholder="請輸入關鍵字" />
+                        <button type="submit" value="">
+                            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a"></i>
+                        </button>
+                    </form>
+                    <!--搜尋功能結束-->
+                </div>
+                <div class="message">
+                    <a href="message.html"><!--聯絡我們-->
+                        <i class="fa-solid fa-comment fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <a href="member.html"><!--使用者-->
+                        <i class="fa-regular fa-user fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="shopping">
+                    <a href="shoppingcar.html"><!--購物車-->
+                        <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <label for="side_menu_switch" id="menu_button"><i class="fa-solid fa-bars fa-2xl"
+                            style="color: #cdd6e4"></i></label>
+                </div>
+            </div>
+        </header>
+        <input type="checkbox" name="" id="side_menu_switch" />
+        <div class="big_side_menu_switch">
+            <div class="side_menu">
+                <div class="meau_a">
+                    <nav>
+                        <a href="about.html"><i class="fa fa-brands fa-docker fa-xl"></i>關於我們</a>
+                        <hr />
+                        <a href=""><i class="fa fa-solid fa-meteor"></i>購買注意事項</a>
+                        <hr />
+                        <div id="menu_product">
+                            <ul>
+                                <li>
+                                    <button onclick="ul_visible()">
+                                        商品
+                                        <div id="product_turn">▲</div>
+                                    </button>
+                                    <ul id="hidden_ul">
+                                        <li><a href="allproduct.html?q=1">商品--文清</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=2">商品--卡通</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=3">商品--宮崎駿</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=4">商品--水彩</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=5">商品--油畫</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=6">商品--風景</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="QAQ">
+                <div class="title">
+                    <h1>祝福之語</h1>
+                    <hr />
+                </div>
+                <form action="shop.html" method="get">
+                    <div class="product">
+                        <img src="image/hipster1.jpg" class="productphotos" /><!--商品照片-->
+                        <div class="greet">
+                            <h1>想訴說的話</h1>
+                            <div id="greeting">
+                                <h2>參考選項</h2>
+                                <ul>
+                                    <li>
+                                        <h3 class="greettype">祝福</h3>
+                                        <ul>
+                                            <li class="birthdayclick" onclick="birthdayclick(0)">
+                                                新年
+                                            </li>
+                                            <li class="birthdayclick" onclick="birthdayclick(1)">
+                                                畢業
+                                            </li>
+                                            <li class="birthdayclick" onclick="birthdayclick(2)">
+                                                結婚
+                                            </li>
+                                            <li class="birthdayclick" onclick="birthdayclick(3)">
+                                                端午節
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3 class="greettype">關心</h3>
+                                        <ul>
+                                            <li class="encourageclick" onclick="encourageclick(0)">
+                                                鼓勵
+                                            </li>
+                                            <li class="encourageclick" onclick="encourageclick(1)">
+                                                安慰
+                                            </li>
+                                            <li class="encourageclick" onclick="encourageclick(2)">
+                                                日常
+                                            </li>
+                                            <li class="encourageclick" onclick="encourageclick(3)">
+                                                報平安
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3 class="greettype">生日祝福</h3>
+                                        <ul>
+                                            <li class="confessclick" onclick="confessclick(0)">
+                                                長輩
+                                            </li>
+                                            <li class="confessclick" onclick="confessclick(1)">
+                                                朋友
+                                            </li>
+                                            <li class="confessclick" onclick="confessclick(2)">
+                                                情人
+                                            </li>
+                                            <li class="confessclick" onclick="confessclick(3)">
+                                                親人
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br />
+                            <textarea name="" id="greetarea" cols="46" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="productinformation">
+                        <div class="detail">
+                            <h2>明信片簡介</h2>
+                            <section>
+                                很多紅綠燈交叉路口，女人看似小心翼翼但卻又悠閒地走在路上
+                            </section>
+                        </div>
+                        <div class="amount">
+                            <h2>購買數量</h2>
+                            <div class="flexcenter">
+                                <div class="minusadd">
+                                    <input type="button" value="-" class="btn" onclick="minus(0)" />
+                                    <input type="text" class="input_num" id="txt" value="1"
+                                        onkeyup="numbertext(event,0);" />
+                                    <input type="button" value="+" class="btn" onclick="add(0)" />
+                                </div>
+                                <h4>庫存數量:</h4>
+                            </div>
+                            <h2>價格：30</h2>
+                            <input type="submit" value="放入購物車" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="content">
+                <div class="title">
+                    <h1>別人的評價</h1>
+                </div>
+                <div class="contenting">
+                    <div class="personcontent">
+                        <h4>路人QAQ</h4>
+                        <span class="star">★★★★</span>
+                        <br />
+                        <section>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur, aliquam sequi fuga, error dicta nam repudiandae, quo
+                            odio molestiae numquam quia accusamus. Repellendus minus obcaecati
+                            doloremque possimus nihil qui iste?
+                        </section>
+                        <br />
+                        <hr />
+                    </div>
+                    <div class="personcontent">
+                        <h4>路人QAQ1</h4>
+                        <span class="star">★★★</span>
+                        <br />
+                        <section>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur, aliquam sequi fuga, error dicta nam repudiandae, quo
+                            odio molestiae numquam quia accusamus. Repellendus minus obcaecati
+                            doloremque possimus nihil qui iste?
+                        </section>
+                        <br />
+                        <hr />
+                    </div>
+                    <div class="personcontent">
+                        <h4>路人QAQ2</h4>
+                        <span class="star">★★★★★</span>
+                        <br />
+                        <section>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur, aliquam sequi fuga, error dicta nam repudiandae, quo
+                            odio molestiae numquam quia accusamus. Repellendus minus obcaecati
+                            doloremque possimus nihil qui iste?
+                        </section>
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <font style="text-align: center">Copyright©2023 I want to tell you</font><br />
+        <font style="text-align: right">瀏覽次數:</font>
+    </footer>
+</body>
+<script src="js/shop.js"></script>
+
+</html>

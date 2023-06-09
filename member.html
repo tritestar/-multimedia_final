@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>member</title>
+    <script src="https://kit.fontawesome.com/f665ad8d64.js" crossorigin="anonymous"></script>
+    <link rel="import" href="component.html" />
+    <link rel="stylesheet" href="css/member.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script>
+        function onclick_opendetail(QAQ) {
+            document.getElementById(QAQ).style.display = "block";
+            document.getElementById("fade" + QAQ).style.display = "block";
+        }
+        function onclick_opencomment(QAQ) {
+            document.getElementById(QAQ).style.display = "block";
+        }
+        function onclick_closecomment(QAQ) {
+            document.getElementById(QAQ).style.display = "none";
+        }
+        function onclick_closedetail(QAQ) {
+            document.getElementById(QAQ).style.display = "none";
+            document.getElementById("fade" + QAQ).style.display = "none";
+        }
+    </script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><!--首頁超連結-->
+                    <div class="home"><img src="image/logo.jpg" /></div>
+                </a>
+                <span class="tit">我想對你說</span>
+            </div>
+            <div class="functions">
+                <div class="search">
+                    <form action="search.html" method="get">
+                        <!--搜尋功能-->
+                        <input type="search" placeholder="請輸入關鍵字" />
+                        <button type="submit" value="">
+                            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a"></i>
+                        </button>
+                    </form>
+                    <!--搜尋功能結束-->
+                </div>
+                <div class="message">
+                    <a href="message.html"><!--聯絡我們-->
+                        <i class="fa-solid fa-comment fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <a href="member.html"><!--使用者-->
+                        <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="shopping">
+                    <a href="shoppingcar.html"><!--購物車-->
+                        <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <label for="side_menu_switch" id="menu_button"><i class="fa-solid fa-bars fa-2xl"
+                            style="color: #cdd6e4"></i></label>
+                </div>
+            </div>
+        </header>
+        <input type="checkbox" name="" id="side_menu_switch" />
+        <div class="big_side_menu_switch">
+            <div class="side_menu">
+                <div class="meau_a">
+                    <nav>
+                        <a href="about.html"><i class="fa fa-brands fa-docker fa-xl"></i>關於我們</a>
+                        <hr />
+                        <a href="Precautions.html"><i class="fa fa-solid fa-meteor"></i>購買注意事項</a>
+                        <hr />
+                        <div id="menu_product">
+                            <ul>
+                                <li>
+                                    <button onclick="ul_visible()">
+                                        商品
+                                        <div id="product_turn">▲</div>
+                                    </button>
+                                    <ul id="hidden_ul">
+                                        <li><a href="allproduct.html?q=1">商品--文清</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=2">商品--卡通</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=3">商品--宮崎駿</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=4">商品--水彩</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=5">商品--油畫</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=6">商品--風景</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="member">
+                <div class="tab">
+                    <!--會員資訊-->
+                    <input type="radio" name="css-tabs" id="information" checked class="tab-switch" />
+                    <label for="information" class="tab-label">會員資訊</label>
+                    <div class="tab-content">
+                        <form action="" method="">
+                            <div class="show">
+                                <p>姓名:孫小美</p>
+                                <p>電話:0911111111</p>
+                                <p>地址:地球的某個角落</p>
+                                <p>信箱:mmm@gmail.com</p>
+                            </div>
+                            <button>
+                                <a href="javascript:void(0)"
+                                    onclick="document.getElementById('edit').style.display='block';document.getElementById('fade').style.display='block'">變更</a>
+                            </button>
+                            <div id="edit" class="white_content">
+                                &emsp;姓名:&emsp;<input type="text" name="member_name" /><br />
+                                &emsp;電話:&emsp;<input type="text" name="phone" /><br />
+                                &emsp;地址:&emsp;<input type="text" name="dress" /><br />
+                                &emsp;信箱:&emsp;<input type="email" name="email" /><br />
+                                &emsp;密碼:&emsp;<input type="password" name="password" /><br />
+                                確認密碼:<input type="password" name="checkpass" /><br />
+                                <button>
+                                    <a href="javascript:void(0)"
+                                        onclick="document.getElementById('edit').style.display='none';document.getElementById('fade').style.display='none'">更新</a>
+                                </button>
+                            </div>
+                            <!--彈出式視窗結束-->
+                        </form>
+                    </div>
+                </div>
+                <div class="tab">
+                    <!--訂單-->
+                    <input type="radio" name="css-tabs" id="history" class="tab-switch" />
+                    <label for="history" class="tab-label">訂單紀錄</label>
+                    <div class="tab-content">
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <th>會員編號</th>
+                                    <th>訂單編號</th>
+                                    <th>訂單日期</th>
+                                    <th>訂單金額</th>
+                                    <th>訂單狀態</th>
+                                    <th>訂單內容</th>
+                                </tr>
+                                <tr>
+                                    <!--訂單1-->
+                                    <td>110059</td>
+                                    <td>202305030121</td>
+                                    <td>2023-05-03</td>
+                                    <td>60</td>
+                                    <td>已出貨</td>
+                                    <td>
+                                        <!--訂單內容，彈出式視窗1-->
+                                        <p>
+                                            <a href="javascript:void(0)" onclick="onclick_opendetail(202305030121)">查看</a>
+                                        </p>
+                                        <!--onclick_opendetail裡放id-->
+                                        <div id="202305030121" class="white_content">
+                                            <!--每筆訂單id每個要不同-->
+                                            <table>
+                                                <tr>
+                                                    <th>商品編號</th>
+                                                    <th class="blessing">祝福語</th>
+                                                    <th>單件價格</th>
+                                                    <th>商品數量</th>
+                                                    <th>小計</th>
+                                                    <th>付款方式</th>
+                                                    <th>取貨人</th>
+                                                    <th>取貨地址/店家</th>
+                                                    <th>取貨人電話</th>
+                                                    <th>評論</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>101</td>
+                                                    <td>
+                                                        生日快樂！願你在新的一歲中擁有勇氣、智慧和力量，並且實現你的夢想。
+                                                    </td>
+                                                    <td>30</td>
+                                                    <td>1</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <!--商品評論-->
+                                                        <div class="flexcenter">
+                                                            <div class="comment_click" href="javascript:void(0)"
+                                                                onclick="onclick_opencomment('comment1')"></div>
+                                                        </div>
+                                                        <div id="comment1" class="comment">
+                                                            <div class="rating">
+                                                                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                                                                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                                                                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                                                                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                                                                <input type="radio" name="star" id="star5"><label for="star5"></label>
+                                                            </div>
+                                                            <!--comment1每筆商品要不一樣-->
+                                                            <textarea class="comment_textarea" name="comment" id="" cols="30" rows="10">請輸入評論</textarea><br />
+                                                            <a href="javascript:void(0)"
+                                                                onclick="onclick_closecomment('comment1')">確定</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>203</td>
+                                                    <td>
+                                                        祝你們新婚快樂，愿你們的生活中充滿浪漫和驚喜。
+                                                    </td>
+                                                    <td>30</td>
+                                                    <td>1</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="flexcenter">
+                                                            <div class="comment_click" href="javascript:void(0)"
+                                                                onclick="onclick_opencomment('comment2')"></div>
+                                                        </div>
+                                                        <div id="comment2" class="comment">
+                                                            <div class="rating">
+                                                                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                                                                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                                                                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                                                                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                                                                <input type="radio" name="star" id="star5"><label for="star5"></label>
+                                                            </div>
+                                                            <textarea class="comment_textarea" name="comment" id=""
+                                                                cols="30" rows="10">請輸入評論</textarea><br />
+                                                            <a href="javascript:void(0)"
+                                                                onclick="onclick_closecomment('comment2')">確定</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div>
+                                                <p class="total">合計:60</p>
+                                            </div>
+                                            <a href="javascript:void(0)" onclick="onclick_closedetail(202305030121)">關閉</a>
+                                        </div>
+                                        <!--彈出式視窗結束-->
+                                        <div id="fade202305030121" class="black_overlay"></div>
+                                        <!--fade後面接該筆訂單的ID-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--訂單2-->
+                                    <td>110060</td>
+                                    <td>202305030317</td>
+                                    <td>2023-05-03</td>
+                                    <td>90</td>
+                                    <td>未付款</td>
+                                    <td>
+                                        <!--訂單內容，彈出式視窗2-->
+                                        <p>
+                                            <a href="javascript:void(0)" onclick="onclick_opendetail(202305030317)">查看</a>
+                                        </p>
+                                        <div id="202305030317" class="white_content">
+                                            <table>
+                                                <tr>
+                                                    <th>商品編號</th>
+                                                    <th class="blessing">祝福語</th>
+                                                    <th>單件價格</th>
+                                                    <th>商品數量</th>
+                                                    <th>小計</th>
+                                                    <th>付款方式</th>
+                                                    <th>取貨人</th>
+                                                    <th>取貨地址/店家</th>
+                                                    <th>取貨人電話</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>305</td>
+                                                    <td>
+                                                        無論我身在何處，您的愛始終是我的力量來源。母親節快樂！
+                                                    </td>
+                                                    <td>30</td>
+                                                    <td>1</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="flexcenter">
+                                                            <div class="comment_click" href="javascript:void(0)"
+                                                                onclick="onclick_opencomment('comment3')"></div>
+                                                        </div>
+                                                        <div id="comment3" class="comment">
+                                                            <div class="rating">
+                                                                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                                                                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                                                                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                                                                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                                                                <input type="radio" name="star" id="star5"><label for="star5"></label>
+                                                            </div>
+                                                            <textarea class="comment_textarea" name="comment" id=""
+                                                                cols="30" rows="10">請輸入評論</textarea><br />
+                                                            <a href="javascript:void(0)"
+                                                                onclick="onclick_closecomment('comment3')">確定</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>403</td>
+                                                    <td>
+                                                        老師您是我們成長路上的引路人，教師節祝您健康和快樂！
+                                                    </td>
+                                                    <td>30</td>
+                                                    <td>1</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="flexcenter">
+                                                            <div class="comment_click" href="javascript:void(0)"
+                                                                onclick="onclick_opencomment('comment4')"></div>
+                                                        </div>
+                                                        <div id="comment4" class="comment">
+                                                            <div class="rating">
+                                                                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                                                                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                                                                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                                                                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                                                                <input type="radio" name="star" id="star5"><label for="star5"></label>
+                                                            </div>
+                                                            <textarea class="comment_textarea" name="comment" id=""
+                                                                cols="30" rows="10">請輸入評論</textarea><br />
+                                                            <a href="javascript:void(0)"
+                                                                onclick="onclick_closecomment('comment4')">確定</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501</td>
+                                                    <td>
+                                                        畢業快樂！我希望你在人生的下一個階段中充滿信心和勇氣，無論前方的道路有多麼坎坷都能夠勇往直前。
+                                                    </td>
+                                                    <td>30</td>
+                                                    <td>1</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="flexcenter">
+                                                            <div class="comment_click" href="javascript:void(0)"
+                                                                onclick="onclick_opencomment('comment5')"></div>
+                                                        </div>
+                                                        <div id="comment5" class="comment">
+                                                            <div class="rating">
+                                                                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                                                                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                                                                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                                                                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                                                                <input type="radio" name="star" id="star5"><label for="star5"></label>
+                                                            </div>
+                                                            <textarea class="comment_textarea" name="comment" id=""
+                                                                cols="30" rows="10">請輸入評論</textarea><br />
+                                                            <a href="javascript:void(0)"
+                                                                onclick="onclick_closecomment('comment5')">確定</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div>
+                                                <p class="total">合計:90</p>
+                                            </div>
+                                            <a href="javascript:void(0)" onclick="onclick_closedetail(202305030317)">關閉</a>
+                                        </div>
+                                        <div id="fade202305030317" class="black_overlay"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab">
+                    <!--評論-->
+                    <input type="radio" name="css-tabs" id="tab-5" class="tab-switch" />
+                    <label for="tab-5" class="tab-label">歷史評論</label>
+                    <div class="tab-content">
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <th>訂單編號</th>
+                                    <th>商品名稱</th>
+                                    <th>評分</th>
+                                    <th>評論</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <font style="text-align: center">Copyright©2023 I want to tell you</font><br />
+        <font style="text-align: right">瀏覽次數:</font>
+    </footer>
+</body>
+
+</html>

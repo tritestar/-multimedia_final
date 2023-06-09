@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back</title>
+    <script src="https://kit.fontawesome.com/f665ad8d64.js" crossorigin="anonymous"></script>
+    <link rel="import" href="component.html" />
+    <link rel="stylesheet" href="css/back.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><!--首頁超連結-->
+                <div class="home"><img src="image/logo.jpg" /></div>
+            </a>
+            <span class="tit">我想對你說</span>
+        </div>
+        <div class="functions">
+            <div class="search">
+                <form action="search.html" method="get">
+                    <!--搜尋功能-->
+                    <input type="search" placeholder="請輸入關鍵字" />
+                    <button type="submit" value="">
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a"></i>
+                    </button>
+                </form>
+                <!--搜尋功能結束-->
+            </div>
+            <div class="message">
+                <a href="message.html"><!--聯絡我們-->
+                    <i class="fa-solid fa-comment fa-2xl" style="color: #cdd6e4"></i>
+                </a>
+            </div>
+            <div class="user">
+                <a href="member.html"><!--使用者-->
+                    <i class="fa-regular fa-user fa-2xl" style="color: #cdd6e4"></i>
+                </a>
+            </div>
+            <div class="shopping">
+                <a href="shoppingcar.html"><!--購物車-->
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #cdd6e4"></i>
+                </a>
+            </div>
+            <div class="menu">
+                <label for="side_menu_switch" id="menu_button"><i class="fa-solid fa-bars fa-2xl"
+                        style="color: #cdd6e4"></i></label>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" name="" id="side_menu_switch" />
+    <div class="big_side_menu_switch">
+        <div class="side_menu">
+            <div class="meau_a">
+                <nav>
+                    <a href="about.html"><i class="fa fa-brands fa-docker fa-xl"></i>關於我們</a>
+                    <hr />
+                    <a href="Precautions.html"><i class="fa fa-solid fa-meteor"></i>購買注意事項</a>
+                    <hr />
+                    <div id="menu_product">
+                        <ul>
+                            <li>
+                                <button onclick="ul_visible()">
+                                    商品
+                                    <div id="product_turn">▲</div>
+                                </button>
+                                <ul id="hidden_ul">
+                                    <li><a href="allproduct.html?q=1">商品--文清</a></li>
+                                    <hr />
+                                    <li><a href="allproduct.html?q=2">商品--卡通</a></li>
+                                    <hr />
+                                    <li><a href="allproduct.html?q=3">商品--宮崎駿</a></li>
+                                    <hr />
+                                    <li><a href="allproduct.html?q=4">商品--水彩</a></li>
+                                    <hr />
+                                    <li><a href="allproduct.html?q=5">商品--油畫</a></li>
+                                    <hr />
+                                    <li><a href="allproduct.html?q=6">商品--風景</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="back">
+            <div class="tab">
+                <!--新增商品-->
+                <input type="radio" name="css-tabs" id="add" checked class="tab-switch" />
+                <label for="add" class="tab-label">新增商品</label>
+                <div class="tab-content">
+                    <form action="" method="" enctype="multipart/form-data">
+                        <div>
+                            <p class="b-title">上傳圖片：</p>
+                            <input type="file" id="product_pic" name="product_pic" accept=".jpg, .jpeg, .png" /><br />
+                            <input type="submit" /><br />
+                        </div>
+                        <div class="container">
+                            <div class="item1">
+                                <p class="b-title">商品名稱：</p>
+                                <input type="text" name="name" id="" />
+                            </div>
+                            <div class="item2">
+                                
+                                <p class="b-title">商品類別：</p>
+                                <select size="1" name="type">
+                                    <option>文青</option>
+                                    <option>卡通</option>
+                                    <option>宮崎駿</option>
+                                    <option>水彩</option>
+                                    <option>油畫</option>
+                                    <option>風景</option>
+                                </select>
+                            </div>
+                            <div class="item3">
+                                <p class="b-title">價格：</p>
+                                <input type="number" name="price" id="" placeholder="30" />
+                            </div>
+                            <div class="item4">
+                                <p class="b-title">庫存數量：</p>
+                                <input type="text" name="amount" id="" />
+                            </div>
+                            <div class="item5">
+                                <p class="b-title">商品規格：</p>
+                                <input type="text" name="amount" id="" />
+                            </div>
+                            <div class="item6">
+                                <p class="b-title">商品介紹：</p>
+                                <textarea name="intro" id="" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="item7">
+                                <p class="b-title">祝福語：</p>
+                                <textarea name="bless" id="" cols="50" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <br />
+                        <input type="submit" value="確定" />
+                    </form>
+                </div>
+            </div>
+            <div class="tab">
+                <!--修改商品-->
+                <input type="radio" name="css-tabs" id="alter" class="tab-switch" />
+                <label for="alter" class="tab-label">修改商品</label>
+                <div class="tab-content">
+                    <form action="" method="">
+                        <div class="search">
+                            <input type="search" placeholder="請輸入商品名稱或商品編號"><!--搜尋後秀出商品原本的資料，並可進行更改-->
+                            <button type="submit"value="" >
+                                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a;"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <p class="b-title">上傳圖片：</p>
+                            <input type="file" id="product_pic" name="product_pic" accept=".jpg, .jpeg, .png" /><br />
+                            <input type="submit" /><br />
+                        </div>
+                        <div class="container">
+                            <div class="item1">
+                                <p class="b-title">商品名稱：</p>
+                                <input type="text" name="name" id="" />
+                            </div>
+                            <div class="item2">
+                                
+                                <p class="b-title">商品類別：</p>
+                                <select size="1" name="type">
+                                    <option>文青</option>
+                                    <option>卡通</option>
+                                    <option>宮崎駿</option>
+                                    <option>水彩</option>
+                                    <option>油畫</option>
+                                    <option>風景</option>
+                                </select>
+                            </div>
+                            <div class="item3">
+                                <p class="b-title">價格：</p>
+                                <input type="number" name="price" id="" placeholder="30" />
+                            </div>
+                            <div class="item4">
+                                <p class="b-title">庫存數量：</p>
+                                <input type="text" name="amount" id="" />
+                            </div>
+                            <div class="item5">
+                                <p class="b-title">商品規格：</p>
+                                <input type="text" name="amount" id="" />
+                            </div>
+                            <div class="item6">
+                                <p class="b-title">商品介紹：</p>
+                                <textarea name="intro" id="" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="item7">
+                                <p class="b-title">祝福語：</p>
+                                <textarea name="bless" id="" cols="50" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <br/>
+                        <input type="submit" value="確定" />
+                    </form>
+                </div>
+            </div>
+            <div class="tab">
+                <!--刪除商品-->
+                <input type="radio" name="css-tabs" id="delete" class="tab-switch" />
+                <label for="delete" class="tab-label">刪除商品</label>
+                <div class="tab-content">
+                    <form action="" method="">
+                        <div class="search">
+                            <input type="search" placeholder="請輸入商品名稱或商品編號">
+                            <button type="submit"value="" >
+                                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a;"></i>
+                            </button>
+                        </div>
+                        <!--
+                        <div>
+                            <p class="b-title">商品名稱：</p>
+                            <input type="text" name="name" id="" />
+                        </div>
+                        <div>
+                            <p class="b-title">商品編號：</p>
+                            <input type="text" name="id" id="" placeholder="" />
+                        </div>
+                        -->
+                        <div class="show">
+                            <p>商品名稱:</p>
+                            <p>圖片:</p>
+                            <img src="image/anime1.jpg" alt="">
+                            <p>介紹:</p>
+                        </div>
+                        <br/>
+                        <input type="submit" value="刪除" />
+                    </form>
+                </div>
+            </div>
+            <div class="tab">
+                <!--訂單-->
+                <input type="radio" name="css-tabs" id="order" class="tab-switch" />
+                <label for="order" class="tab-label">訂單</label>
+                <div class="tab-content">
+                    <form action="">
+                        <table class="order">
+                            <tr>
+                                <th>會員編號</th>
+                                <th>訂單編號</th>
+                                <th>訂單日期</th>
+                                <th>訂單金額</th>
+                                <th>訂單狀態</th>
+                                <th>訂單內容</th>
+                            </tr>
+                            <tr>
+                                <!--訂單1-->
+                                <td>110059</td>
+                                <td>202305030121</td>
+                                <td>2023-05-03</td>
+                                <td>60</td>
+                                <td>已出貨</td>
+                                <td>
+                                    <!--訂單內容，彈出式視窗1-->
+                                    <p>
+                                        <a href="javascript:void(0)"
+                                            onclick="document.getElementById('202305030121').style.display='block';document.getElementById('fade').style.display='block'">查看</a>
+                                    </p>
+                                    <div id="202305030121" class="white_content">
+                                        <table class="order">
+                                            <tr>
+                                                <th>商品編號</th>
+                                                <th class="blessing">祝福語</th>
+                                                <th>單件價格</th>
+                                                <th>商品數量</th>
+                                                <th>小計</th>
+                                                <th>付款方式</th>
+                                                <th>取貨人</th>
+                                                <th>取貨地址/店家</th>
+                                                <th>取貨人電話</th>
+                                            </tr>
+                                            <tr>
+                                                <td>101</td>
+                                                <td>
+                                                    生日快樂！願你在新的一歲中擁有勇氣、智慧和力量，並且實現你的夢想。
+                                                </td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                                <td>30</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>203</td>
+                                                <td>
+                                                    祝你們新婚快樂，愿你們的生活中充滿浪漫和驚喜。
+                                                </td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                                <td>30</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <p class="total">合計:60</p>
+                                        </div>
+                                        <a href="javascript:void(0)"
+                                            onclick="document.getElementById('202305030121').style.display='none';document.getElementById('fade').style.display='none'">關閉</a>
+                                    </div>
+                                    <div id="fade" class="black_overlay"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!--訂單2-->
+                                <td>110060</td>
+                                <td>202305030317</td>
+                                <td>2023-05-03</td>
+                                <td>90</td>
+                                <td>未付款</td>
+                                <td>
+                                    <!--訂單內容，彈出式視窗2-->
+                                    <p>
+                                        <a href="javascript:void(0)"
+                                            onclick="document.getElementById('202305030317').style.display='block';document.getElementById('fade').style.display='block'">查看</a>
+                                    </p>
+                                    <div id="202305030317" class="white_content">
+                                        <table class="order">
+                                            <tr>
+                                                <th>商品編號</th>
+                                                <th class="blessing">祝福語</th>
+                                                <th>單件價格</th>
+                                                <th>商品數量</th>
+                                                <th>小計</th>
+                                                <th>付款方式</th>
+                                                <th>取貨人</th>
+                                                <th>取貨地址/店家</th>
+                                                <th>取貨人電話</th>
+                                            </tr>
+                                            <tr>
+                                                <td>305</td>
+                                                <td>
+                                                    無論我身在何處，您的愛始終是我的力量來源。母親節快樂！
+                                                </td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                                <td>30</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>403</td>
+                                                <td>
+                                                    老師您是我們成長路上的引路人，教師節祝您健康和快樂！
+                                                </td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                                <td>30</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>501</td>
+                                                <td>
+                                                    畢業快樂！我希望你在人生的下一個階段中充滿信心和勇氣，無論前方的道路有多麼坎坷都能夠勇往直前。
+                                                </td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                                <td>30</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <p class="total">合計:90</p>
+                                        </div>
+                                        <a href="javascript:void(0)"
+                                            onclick="document.getElementById('202305030317').style.display='none';document.getElementById('fade').style.display='none'">關閉</a>
+                                    </div>
+                                    <div id="fade" class="black_overlay"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="tab">
+                <!--評論-->
+                <input type="radio" name="css-tabs" id="tab-5" class="tab-switch" />
+                <label for="tab-5" class="tab-label">評論</label>
+                <div class="tab-content">
+                    <form action="">
+                        <table>
+                            <tr>
+                                <th>訂單編號</th>
+                                <th>商品名稱</th>
+                                <th>評分</th>
+                                <th class="cm">評論</th>
+                            </tr>
+                            <tr>
+                                <td>20230606115001</td>
+                                <td>amime1</td>
+                                <td>*****</td>
+                                <td>這個祝福語代表了我滿滿的心意，還有這張圖非常適合我要送的仁和這個主題!</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="tab">
+                <!--私聊-->
+                <input type="radio" name="css-tabs" id="talk" class="tab-switch" />
+                <label for="talk" class="tab-label">修改商品</label>
+                <div class="tab-content">
+                    <form action="" method="" enctype="multipart/form-data">
+                        <table>
+                            <tr>
+                                <th>姓名</th>
+                                <th>電話</th>
+                                <th>電子信箱</th>
+                                <th class="Q">需求或問題</th>
+                            </tr>
+                            <tr>
+                                <td>孫小美</td>
+                                <td>0911111111</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div style="height: 1000px"></div>
+    <footer>
+        <font style="text-align: center">Copyright©2023 I want to tell you</font><br />
+        <font style="text-align: right">瀏覽次數:</font>
+    </footer>
+</body>
+
+</html>

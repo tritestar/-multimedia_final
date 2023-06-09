@@ -1,0 +1,276 @@
+header {
+  padding: 5px 0px 10px 0px;
+  background-image: url(../image/1.png);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 4;
+  position: fixed;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+header .search form {
+  background-color: white;
+  display: flex;
+}
+
+header .search form button {
+  cursor: pointer;
+}
+
+.functions {
+  align-items: flex-end;
+  display: inline-flex;
+  padding: 5px 2% 5px 5px;
+}
+
+.logo {
+  display: inline-flex;
+  color: white;
+  font-size: 40px;
+}
+
+.search form {
+  display: flex;
+  margin: 0 10px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
+.search form input {
+  border: none;
+  background-color: transparent;
+  color: #1d4b9a;
+  padding: 0px 10px;
+  height: 25px;
+  width: 150px;
+}
+
+.search form button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 0px 5px;
+}
+
+.search {
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+.home {
+  margin: 15px 20px 0px 100px;
+}
+
+.tit {
+  padding: 35px 0px 35px 0px;
+}
+
+.menu {
+  margin-left: 5px;
+}
+
+.functions i {
+  padding: 0px 10px;
+}
+
+#menu_button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+#side_menu_switch:checked+.big_side_menu_switch {
+  transform: translate(0);
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.big_side_menu_switch {
+  margin: 144px 0 0 0;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transform: translate(100%);
+  transition: 0.3s;
+}
+
+#side_menu_switch {
+  opacity: 0;
+}
+
+.side_menu {
+  background-image: linear-gradient(0deg, #330000, #123456);
+  display: flex;
+  flex-direction: column;
+}
+
+.side_menu nav a {
+  transition: none;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+header nav hr {
+  border: 1px white solid;
+  margin-left: 20px;
+  margin-right: 20px;
+  top: 0px;
+  bottom: 0;
+}
+
+#menu_product hr {
+  margin-left: 40px;
+}
+
+nav a .fa {
+  margin-left: -1.1em;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+nav a:hover .fa {
+  margin-left: 0;
+  transform: scale(1);
+}
+
+#menu_product ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#menu_product ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#product_turn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  z-index: 3;
+  transition: 0.3s;
+}
+
+#turn180checkbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#menu_product ul li button {
+  text-decoration: none;
+  list-style-type: none;
+  width: 250px;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+#menu_product ul li ul {
+  /* 讓第二層ul跳脫文件流以利定位 */
+  position: relative;
+  /* 固定寬度 */
+  width: 250px;
+  /* 避免出現捲軸 */
+  overflow: visible;
+  /* 讓ul與母階層li相同位置 */
+  clear: left;
+  margin-top: -10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+#menu_product ul li ul li a {
+  width: 250px;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  transform: translate(2em);
+}
+
+#menu_product ul li ul li a:hover {
+  transform: translate(3em);
+  transition: 0.3s;
+}
+
+#menu_product ul li ul {
+  transform: .3;
+  display: none;
+}
+
+main {
+  padding: 200px 0 0 0;
+  background-size: cover;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 50px;
+}
+
+footer {
+  background-image: url(../image/1.png);
+  font-size: larger;
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 20px 0px 0px;
+  text-align: center;
+
+}
+
+.wrapper {
+  flex-grow: 1;
+  /*可佔滿垂直剩餘的空間*/
+  background-image: url(../image/4.jpg);
+  background-size: cover;
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+  }
+
+  .functions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .big_side_menu_switch {
+    margin: 188px 0 0 0;
+  }
+}

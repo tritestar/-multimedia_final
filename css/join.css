@@ -1,0 +1,63 @@
+main form {
+    padding: 0 auto 200px auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+main .login {
+    margin-bottom: -100px;
+}
+
+main input {
+    margin: 20px;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+}
+
+main input[type="submit"] {
+    width: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+}
+
+main button {
+    margin: 20px;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: 500;
+    height: 30px;
+    font-size: 15px;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    /*使物件依序排列*/
+    flex-direction: column;
+    /*使物件垂直排列*/
+}
+
+
+.footer {
+    background-color: gray;
+}

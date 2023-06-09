@@ -1,0 +1,237 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.table-center .title {
+    color: white;
+    width: 100%;
+}
+
+.table-center h1 {
+    color: white;
+}
+
+.tabletyle tr {
+    padding: 10px 0;
+}
+
+.tablestyle {
+    background-color: rgba(142, 195, 241, 0.5);
+    border-radius: 30px;
+}
+
+.thtd {
+    font-size: larger;
+}
+
+.tablestyle td {
+    padding: 10px;
+}
+
+.producttd {
+    display: flex;
+    justify-content: center;
+}
+
+.tablestyle .product {
+    width: 150px;
+    padding: 10px 0;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.tablestyle .td7 {
+    padding: 0 10px;
+}
+
+.tablestyle .td1 {
+    width: 100px;
+}
+
+.tablestyle .td2 {
+    width: 200px;
+}
+
+.tablestyle .td3 {
+    width: 80px;
+}
+
+.tablestyle .td4 {
+    width: 150px;
+}
+
+.tablestyle .td5 {
+    width: 150px;
+}
+
+.tablestyle .td6 {
+    width: 100px;
+}
+
+.tablestyle .td7 {
+    padding: 0 10px;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+table h4 {
+    font-size: 18px;
+}
+
+.tablestyle td {
+    text-align: center;
+}
+
+.comment {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 60%;
+    width: 18%;
+    padding: 20px;
+    border: 1px solid #16a085;
+    border-radius: 0 25px 0 25px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.comment_click {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #71B4EB;
+}
+
+.comment_click:hover {
+    background-color: rgb(106, 0, 255);
+}
+
+textarea {
+    resize: none;
+    font-size: 14px;
+}
+
+.minusadd {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 100px;
+    height: 30px;
+}
+
+main input {
+    margin: 0;
+    border: none;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+}
+
+.input_num {
+    width: 50px;
+}
+
+.btn {
+    width: 25px;
+    cursor: pointer;
+}
+
+main select {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 15px 0;
+}
+
+.totaltd p {
+    text-align: right;
+    font-size: 25px;
+    font-style: italic;
+    padding: 0 10px 0 0;
+}
+
+.byebye {
+    border: none;
+    cursor: pointer;
+    padding: 10ox;
+    font-size: large;
+}
+
+.byebye:hover {
+    background-color: bisque;
+}
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    visibility: hidden;
+    margin: 50px 0 50px 0;
+
+}
+
+#check {
+    cursor: pointer;
+}
+
+.checkout .title {
+    width: 80%;
+}
+
+.checkout .title h1 {
+    color: white;
+}
+
+.information {
+    margin: 30px 0 0 0px;
+}
+
+.information p {
+    font-size: 18px;
+}
+
+.info {
+    color: white;
+
+}
+
+.infora {
+    color: white;
+
+}
+
+.infora span {
+    margin: -100px 0 0;
+}
+
+.information input {
+    font-size: 16px;
+    width: 100%;
+}
+
+.information input[type="radio"] {
+    width: 20px;
+
+}
+
+.information input {
+    margin: 15px 0;
+    border-radius: 30px;
+}
+
+.information .flexcenter button {
+    border-radius: 30px;
+    border: 1px solid black;
+    margin: 0px 20px;
+    padding: 0 5px;
+    cursor: pointer;
+}

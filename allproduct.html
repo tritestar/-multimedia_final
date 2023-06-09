@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allproduct</title>
+    <script src="https://kit.fontawesome.com/f665ad8d64.js" crossorigin="anonymous"></script>
+    <link rel="import" href="component.html">
+    <link rel="stylesheet" href="css/allproduct.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><!--首頁超連結-->
+                    <div class="home"><img src="image/logo.jpg" /></div>
+                </a>
+                <span class="tit">我想對你說</span>
+            </div>
+            <div class="functions">
+                <div class="search">
+                    <form action="search.html" method="get">
+                        <!--搜尋功能-->
+                        <input type="search" placeholder="請輸入關鍵字" />
+                        <button type="submit" value="">
+                            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a"></i>
+                        </button>
+                    </form>
+                    <!--搜尋功能結束-->
+                </div>
+                <div class="message">
+                    <a href="message.html"><!--聯絡我們-->
+                        <i class="fa-solid fa-comment fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <a href="member.html"><!--使用者-->
+                        <i class="fa-regular fa-user fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="shopping">
+                    <a href="shoppingcar.html"><!--購物車-->
+                        <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <label for="side_menu_switch" id="menu_button"><i class="fa-solid fa-bars fa-2xl"
+                            style="color: #cdd6e4"></i></label>
+                </div>
+            </div>
+        </header>
+        <input type="checkbox" name="" id="side_menu_switch" />
+        <div class="big_side_menu_switch">
+            <div class="side_menu">
+                <div class="meau_a">
+                    <nav>
+                        <a href="about.html"><i class="fa fa-brands fa-docker fa-xl"></i>關於我們</a>
+                        <hr />
+                        <a href="Precautions.html"><i class="fa fa-solid fa-meteor"></i>購買注意事項</a>
+                        <hr />
+                        <div id="menu_product">
+                            <ul>
+                                <li>
+                                    <button onclick="ul_visible()">
+                                        商品
+                                        <div id="product_turn">▲</div>
+                                    </button>
+                                    <ul id="hidden_ul">
+                                        <li><a href="allproduct.html?q=1">商品--文清</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=2">商品--卡通</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=3">商品--宮崎駿</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=4">商品--水彩</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=5">商品--油畫</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=6">商品--風景</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <main>
+            <nav><!--分類-->
+                <a href="allproduct.html?q=1" id="link1">文青</a>
+                <a href="allproduct.html?q=2" id="link2">卡通</a>
+                <a href="allproduct.html?q=3" id="link3">宮崎駿</a>
+                <a href="allproduct.html?q=4" id="link4">水彩</a>
+                <a href="allproduct.html?q=5" id="link5">油畫</a>
+                <a href="allproduct.html?q=6" id="link6">風景</a>
+            </nav>
+            <section>
+                <div class="product">
+                    <div class="content" id="q1"><!--文青風-->
+                        <!--item1-->
+                        <div class="item">
+                            <div class="pic">
+                                <a href="shop.html"><img src="image/hipster1.jpg" ></a>
+                            </div>
+                            <div class="txt">
+                                <p>很多紅綠燈交叉路口，女人看似小心翼翼但卻又悠閒地走在路上</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>女孩站在欄杆上，看著碧藍天空中的那架紙飛機，彷彿懷揣著自己的夢想</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/hipster2.jpg">
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/hipster3.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>女人坐在圍牆上，看著鯉魚不斷的從螢幕中游出並在空中飛躍，彷彿自己也跳出了這一方天地去遨遊 </p>
+                            </div>
+                        </div>
+                        <!--item4-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>不論是夕陽初升還是落日餘暉，依舊是充滿了希望</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/hipster4.jpg">
+                            </div>
+                        </div>
+                        <!--item5-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/hipster5.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>小男孩站在鯨魚上，看著遠方的雲彩，暢想著未來</p>
+                            </div>
+                        </div>
+                        <!--item6-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>夕陽西下，懷舊的街道上空無一人</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/hipster6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="q2"><!--卡通-->
+                        <!--item1-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/Cartoon1.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>嘿咻嘿咻!大家一起努力做出好吃的蛋糕，就剩下最後一步的裝飾，裝飾完後就將這個蛋糕送出去一起享用吧!</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>失敗惹不要氣餒!我們再一次出發吧!但在出發之前，記得要先好好的填飽肚子，這樣才能有力氣面對接下來的挑戰嗷!</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/Cartoon2.jpg">
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/Cartoon3.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>一日之計在於晨!早餐可是很重要噠!有個活力滿滿的早餐，相信今天一整天都能給你一個好心情，讓你可以樂觀處理許多事物</p>
+                            </div>
+                        </div>
+                        <!--item4-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>將天上的流星裝起來放在罐子裡，滿滿的願望都在這裡，拿出一顆變成星星糖的流星送給你，希望能實現你的願望，也給你甜滋滋的味道</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/Cartoon4.jpg">
+                            </div>
+                        </div>
+                        <!--item5-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/Cartoon5.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>櫻花圍繞，大家一同坐在草地上，觀賞著粉嫩的櫻花樹和不時被風吹起的櫻花瓣，輕鬆地暢談並且歡笑著</p>
+                            </div>
+                        </div>
+                        <!--item6-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>來吧!一起躲進信封瓶中，投入大海裡，看著海中的景色，隨著海流漂至你的身旁，期待你開啟後看到我偷偷裝進去的心意</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/Cartoon6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="q3"><!--宮崎駿-->
+                        <!--item1-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/anime1.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>龍貓植物園中，一隻大龍貓撐著荷葉傘，站在站牌前等待龍貓公車</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>帕茲和谷博士騎著掃帚朝著天空之城飛去，一起面對各種冒險和挑戰</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/anime2.jpg">
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/anime3.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>龍貓與小月和小梅一起度過了許多冒險和困難時刻，給她們帶來了歡樂和安慰</p>
+                            </div>
+                        </div>
+                        <!--item4-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>宮崎駿的主角們齊聚一堂，在草原上一起度過美好的時光，就像一場大型見面會一樣</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/anime4.jpg">
+                            </div>
+                        </div>
+                        <!--item5-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/anime5.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>石頭守護者望著他們長久以來一直守護的天空之城，就像我們望著家鄉</p>
+                            </div>
+                        </div>
+                        <!--item6-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>小桑和阿席達卡騎著他們的坐騎往森林中飛奔而去，想要保護森林</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/anime6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="q4"><!--水彩-->
+                        <!--item1-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/watercolor1.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>抬頭凝視著你，眼神中承載的話語全部都是對你，將你的全部仔仔細細放在我眼中，眸中除你之外再無其他人，你收到了嗎?</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>舒服地趴在草地上，風輕輕吹過我身上的每一個角落，也帶上了我想說話，就讓風替我把想說的話帶到你身旁吧</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/watercolor2.jpg">
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/watercolor3.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>冬雪皚皚，緩慢落下，沒有其他煩囂，只剩下一頭鹿輕巧地踏在雪地上，緩緩走過...如同我要對你說的話，輕輕地傳遞給你</p>
+                            </div>
+                        </div>
+                        <!--item4-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>兩隻可愛圓滾滾的鳥兒輕聲細語說著悄悄話，彷彿你和他在訴說話語的畫面，眼中只剩對方，言語只傳達給你知道</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/watercolor4.jpg">
+                            </div>
+                        </div>
+                        <!--item5-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/watercolor5.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>下沉...再下沉...沉入深海中，在這靜謐的海里，偷偷開起一場只屬於我們的舞會，在水中自由地擺動、交談</p>
+                            </div>
+                        </div>
+                        <!--item6-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>雖然外表的我看起來是如此的凶狠，眼神也是如此的狠戾，但那是我對外的表象，對你...我會將你小心呵護在我的懷中，誰也都別想輕易靠近</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/watercolor6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="q5"><!--油畫-->
+                        <!--item1-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/painting1.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>綠意盎然的森林，兩隻小鳥高聲討論著哪裡的梅果比較好吃，哪邊的有什麼好玩的</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>夏日午後，朵朵白雲點綴藍天，陣陣在水面上引起漣漪，岸邊的船身也隨飄動。乘上小船的人們朝著遠風小城而去</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/painting2.jpg">
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/painting3.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>橙黃橘綠之時，層林盡染，林寒澗肅，薄霧壟罩湖面，使水中倒影帶著迷離之感</p>
+                            </div>
+                        </div>
+                        <!--item4-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>過了嚴寒，春暖花開之際，萬片白雪隨春風飄逸。帶著古老工藝的火車也放慢速度，與眾人享受這紅情綠意</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/painting4.jpg">
+                            </div>
+                        </div>
+                        <!--item5-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/painting5.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>鄉間小路的兩邊，綻放著轉黃的楓樹，柔美的楓葉輕輕飛舞，悄然落在寂靜的道路上，靜謐而惆悵</p>
+                            </div>
+                        </div>
+                        <!--item6-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>越過山頭，陽光灑落，寒意向森林深處逃竄，翠綠野草染上一抹金黃，蟲鳴鳥叫，頗為熱鬧</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/painting6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="q6"><!--風景-->
+                        <!--item1-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/scenery1.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>夕陽西下，餘暉灑落在花海上，使原先艷紅的花朵又多了一個層次</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>雨後放晴之時，水簾懸掛，飛流直下，強大的衝力帶起陣陣水氣</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/scenery2.jpg">
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/scenery3.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>夕陽的餘暉穿過林中小道，為寒冷的樹林增添一絲溫暖，指引明確的方向</p>
+                            </div>
+                        </div>
+                        <!--item4-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>黃昏的餘暉熊熊燃燒著天際，雖化不開滿山白雪，卻讓湖面有了新的色彩</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/scenery4.jpg">
+                            </div>
+                        </div>
+                        <!--item5-->
+                        <div class="item">
+                            <div class="pic">
+                                <img src="image/scenery5.jpg">
+                            </div>
+                            <div class="txt">
+                                <p>千山萬水，雲霧繚繞，滑著獨舟留下的漣漪，最終也將回歸平靜，映照出千年不衰的風景</p>
+                            </div>
+                        </div>
+                        <!--item6-->
+                        <div class="item">
+                            <div class="txt">
+                                <p>秋染紅了楓林，在夕陽的渲染下，一切依然充滿活力，但在光射不到之處，萬物多了絲蕭條</p>
+                            </div>
+                            <div class="pic">
+                                <img src="image/scenery6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <font style="text-align: center;">Copyright©2023 I want to tell you</font><br>
+        <font style="text-align: right;">瀏覽次數:</font>
+    </footer>
+
+    <script>
+        const queryStr = new URL(window.location.href).searchParams.get('q')
+        console.log(queryStr)
+
+        function render() {
+            clearContent();
+            if (queryStr == 1 || queryStr == null) {
+                q1.style.display = "block";
+                link1.classList.add('action');
+                return;
+            }
+            if (queryStr == 2) {
+                q2.style.display = "block";
+                link2.classList.add('action');
+                return;
+            }
+            if (queryStr == 3) {
+                q3.style.display = "block";
+                link3.classList.add('action');
+                return;
+            }
+            if (queryStr == 4) {
+                q4.style.display = "block";
+                link4.classList.add('action');
+                return;
+            }
+            if (queryStr == 5) {
+                q5.style.display = "block";
+                link5.classList.add('action');
+                return;
+            }
+            if (queryStr == 6) {
+                q6.style.display = "block";
+                link6.classList.add('action');
+                return;
+            }
+        }
+        render();
+        function clearContent() {
+            q1.style.display = "none";
+            q2.style.display = "none";
+            q3.style.display = "none";
+            q4.style.display = "none";
+            q5.style.display = "none";
+            q6.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

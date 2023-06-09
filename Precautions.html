@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f665ad8d64.js" crossorigin="anonymous"></script>
+    <link rel="import" href="component.html">
+    <link rel="stylesheet" href="css/Precautions.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Precautions</title>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><!--首頁超連結-->
+                    <div class="home"><img src="image/logo.jpg" /></div>
+                </a>
+                <span class="tit">我想對你說</span>
+            </div>
+            <div class="functions">
+                <div class="search">
+                    <form action="search.html" method="get">
+                        <!--搜尋功能-->
+                        <input type="search" placeholder="請輸入關鍵字" />
+                        <button type="submit" value="">
+                            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #1d4b9a"></i>
+                        </button>
+                    </form>
+                    <!--搜尋功能結束-->
+                </div>
+                <div class="message">
+                    <a href="message.html"><!--聯絡我們-->
+                        <i class="fa-solid fa-comment fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <a href="member.html"><!--使用者-->
+                        <i class="fa-regular fa-user fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="shopping">
+                    <a href="shoppingcar.html"><!--購物車-->
+                        <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #cdd6e4"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <label for="side_menu_switch" id="menu_button"><i class="fa-solid fa-bars fa-2xl"
+                            style="color: #cdd6e4"></i></label>
+                </div>
+            </div>
+        </header>
+        <input type="checkbox" name="" id="side_menu_switch" />
+        <div class="big_side_menu_switch">
+            <div class="side_menu">
+                <div class="meau_a">
+                    <nav>
+                        <a href="about.html"><i class="fa fa-brands fa-docker fa-xl"></i>關於我們</a>
+                        <hr />
+                        <a href="Precautions.html"><i class="fa fa-solid fa-meteor"></i>購買注意事項</a>
+                        <hr />
+                        <div id="menu_product">
+                            <ul>
+                                <li>
+                                    <button onclick="ul_visible()">
+                                        商品
+                                        <div id="product_turn">▲</div>
+                                    </button>
+                                    <ul id="hidden_ul">
+                                        <li><a href="allproduct.html?q=1">商品--文清</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=2">商品--卡通</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=3">商品--宮崎駿</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=4">商品--水彩</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=5">商品--油畫</a></li>
+                                        <hr />
+                                        <li><a href="allproduct.html?q=6">商品--風景</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section class="slogan">
+                <h1>✮購買須知✮</h1>
+                <h2>購買流程</h2>
+                <div class="txt">
+                    1.加入會員（可以查詢訂單紀錄和歷史評論）<br>
+                    2.挑選好自己心儀的明信片。<br>
+                    3.填入想訴說的話，如果想不到可以選擇我們提供的祝福語。<br>
+                    4.前往購物車確定數量和金額正確，按下結帳按鈕。<br>
+                    5.選擇付款方式及配送方式。<br>
+                </div>
+                <hr>
+                <h2>付款方式</h2>
+                <div class="txt">
+                    1.信用卡<br>
+                    2.銀行轉帳<br>
+                    3.LINE Pay <br>
+                    4.Apple Pay <br>
+                </div>
+                <hr>
+                <h2>配送方式</h2>
+                <div class="txt">
+                    1.宅配至家中<br>
+                    2.超商取件<br>
+                </div>
+                <hr>
+                <h2>退換貨/退款</h2>
+                <div class="txt">
+                    若是發現明信片有任何問題，從商品抵達您手上開始，您即擁有七天鑑賞期 （含例假日），國定假日及週末客服不上班，欲退換貨敬請注意時間。<br>
+                    若還有其他問題，隨時都可以與我們聯繫。<br>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <font style="text-align: center;">Copyright©2023 I want to tell you</font><br>
+        <font style="text-align: right;">瀏覽次數:</font>          
+    </footer>
+</body>
+</html>

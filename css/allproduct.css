@@ -1,0 +1,74 @@
+main nav {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 標楷體;
+}
+
+main nav a {
+    display: inline-flex;
+    text-align: center;
+    font-weight: 100px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+main nav a:hover {
+    font-size: 35px;
+    border-radius: 15px;
+    box-shadow: gainsboro 5px;
+    margin: 15px;
+}
+
+.product {
+    margin: 10px 10% 10px 10%;
+    width: 90%;
+    align-items: center;
+}
+
+.product .item {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.product .pic {
+    height: auto;
+    flex-shrink: 0;
+    width: 40%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: grey 7px 7px 10px 0px;
+}
+
+.product img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.product .txt {
+    width: 45%;
+    font-weight: 500;
+    background-color: rgba(4, 93, 148, 0.6);
+    color: #f6f4e8;
+    flex-shrink: 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: grey 7px 7px 10px 0px;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.product .item> :first-child {
+    margin-right: -3%;
+}

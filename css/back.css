@@ -1,0 +1,250 @@
+body {
+    font-family: "Open Sans";
+    color: #ecf0f1;
+    background-image: url(../image/4.jpg);
+    background-size: cover;
+}
+
+main {
+    line-height: 1.618em;
+}
+
+.back {
+    position: relative;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.back::before,
+.back::after {
+    content: "";
+    display: table;
+}
+
+
+
+.tab {
+    float: left;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    border-radius: 25% 25% 0 0;
+    background-image: url(../image/1.png);
+    border-right: 0.125rem solid #16a085;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+    z-index: 1;
+}
+
+.tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+}
+
+.tab-content {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+.tab-switch:checked+.tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+}
+
+.tab-switch:checked+label+.tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 50px) 2fr 2fr;
+    grid-gap: 20px;
+}
+
+.item1 {
+    grid-area: 1/1/2/2;
+}
+
+.item2 {
+    grid-area: 2/1/4/2;
+}
+
+.item3 {
+    grid-area: 1/2/2/3;
+}
+
+.item4 {
+    grid-area: 2/2/3/3;
+}
+
+.item5 {
+    grid-area: 3/2/4/3;
+}
+
+.item6 {
+    grid-area: 4/1/5/3;
+}
+
+.item7 {
+    grid-area: 5/1/6/3;
+}
+
+main form {
+    margin: 20px;
+}
+
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=88);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid #16a085;
+    border-radius: 25px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.b-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#product_pic {
+    margin-right: 30px;
+}
+
+textarea {
+    resize: none;
+    font-size: 14px;
+}
+
+main .search {
+    border-radius: 10px;
+    border: 1px #2c3e50;
+    margin: 10px 0;
+}
+
+main .search input {
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+}
+
+main .search button {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+main select {
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1.6px black solid;
+}
+
+main input {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.show p {
+    font-size: 18px;
+    margin: 20px 0 20px 30%;
+    text-align: left;
+
+}
+
+.show img {
+    height: 200px;
+    margin: 0 0 0 10%;
+}
+
+.order {
+    width: 98%;
+    border-spacing: 20px
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table .cm,
+.Q {
+    width: 40%;
+}
+
+/*合計*/
+.total {
+    text-align: right;
+    margin: 5px;
+}
+
+/*祝福語*/
+.blessing {
+    width: 30%;
+}
