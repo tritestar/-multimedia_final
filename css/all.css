@@ -99,6 +99,7 @@ header .search form button {
   height: 100%;
   transform: translate(100%);
   transition: 0.3s;
+  overflow: auto;
 }
 
 #side_menu_switch {

@@ -51,6 +51,11 @@ h1 {
     text-align: center;
 }
 
+.card4 img {
+    width: 70%;
+    height: 70%;
+}
+
 main {
     width: 100%;
     margin: 0 auto;
@@ -72,6 +77,11 @@ main img {
 .hotproduct {
     flex-basis: 33%;
     text-align: center;
+}
+
+.hotproduct img {
+    width: 90%;
+    height: 90%;
 }
 
 .word {
